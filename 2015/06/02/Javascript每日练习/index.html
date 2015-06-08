@@ -5,16 +5,16 @@
   
   <title>Javascript每日练习 | Boney_Chiang的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[title] [] [url] [link text]1Description:&amp;#10;&amp;#10;Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be inc">
+  <meta name="description" content="string-incrementerhttp://www.codewars.com/kata/string-incrementer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript每日练习">
 <meta property="og:url" content="http://yoursite.com/2015/06/02/Javascript每日练习/index.html">
 <meta property="og:site_name" content="Boney_Chiang的博客">
-<meta property="og:description" content="[title] [] [url] [link text]1Description:&amp;#10;&amp;#10;Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be inc">
-<meta property="og:updated_time" content="2015-06-03T11:47:31.529Z">
+<meta property="og:description" content="string-incrementerhttp://www.codewars.com/kata/string-incrementer">
+<meta property="og:updated_time" content="2015-06-08T14:58:32.140Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript每日练习">
-<meta name="twitter:description" content="[title] [] [url] [link text]1Description:&amp;#10;&amp;#10;Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be inc">
+<meta name="twitter:description" content="string-incrementerhttp://www.codewars.com/kata/string-incrementer">
   
     <link rel="alternative" href="/atom.xml" title="Boney_Chiang的博客" type="application/atom+xml">
   
@@ -116,7 +116,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/codewars/" style="font-size: 10px;">codewars</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/maven/" style="font-size: 20px;">maven</a> <a href="/tags/spring/" style="font-size: 20px;">spring</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a>
+						<a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Singleton/" style="font-size: 10px;">Singleton</a> <a href="/tags/codewar/" style="font-size: 10px;">codewar</a> <a href="/tags/codewars/" style="font-size: 20px;">codewars</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/maven/" style="font-size: 20px;">maven</a> <a href="/tags/spring/" style="font-size: 20px;">spring</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a>
 					</div>
 				</section>
 				
@@ -213,9 +213,28 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Description:&#10;&#10;Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number the number 1 should be appended to the new string.&#10;&#10;Examples:&#10;&#10;foo -&#62; foo1&#10;&#10;foobar23 -&#62; foobar24&#10;&#10;foo0042 -&#62; foo0043&#10;&#10;foo9 -&#62; foo10&#10;&#10;foo099 -&#62; foo100&#10;&#10;Attention: If the number has leading zeros the amount of digits should be considered.</span><br></pre></td></tr></table></figure>
-<p>原题链接<br><a href="http://www.codewars.com/kata/string-incrementer" target="_blank" rel="external">http://www.codewars.com/kata/string-incrementer</a><br><a id="more"></a></p>
+        <h1 id="string-incrementer">string-incrementer</h1><p><a href="http://www.codewars.com/kata/string-incrementer" target="_blank" rel="external">http://www.codewars.com/kata/string-incrementer</a><br><a id="more"></a><br>Description:</p>
+<p>Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number the number 1 should be appended to the new string.</p>
+<p>Examples:</p>
+<p>foo -&gt; foo1</p>
+<p>foobar23 -&gt; foobar24</p>
+<p>foo0042 -&gt; foo0043</p>
+<p>foo9 -&gt; foo10</p>
+<p>foo099 -&gt; foo100</p>
+<p>Attention: If the number has leading zeros the amount of digits should be considered.<br>原题链接</p>
 <h3 id="解答">解答</h3><figure class="highlight javascript"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">incrementString</span>(<span class="params">input</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(<span class="built_in">isNaN</span>(<span class="built_in">parseInt</span>(input[input.length - <span class="number">1</span>]))) <span class="keyword">return</span> input + <span class="string">'1'</span>;</span><br><span class="line">  <span class="keyword">return</span> input.replace(<span class="regexp">/(0*)([0-9]+$)/</span>, <span class="function"><span class="keyword">function</span>(<span class="params">match, p1, p2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> up = <span class="built_in">parseInt</span>(p2) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> up.toString().length &gt; p2.length ? p1.slice(<span class="number">0</span>, -<span class="number">1</span>) + up : p1 + up;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Description:</p>
+<p>Welcome. In this kata, you are asked to square every digit of a number.</p>
+<p>For example, if we run 9119 through the function, 811181 will come out.</p>
+<p>Note: The function accepts an integer and returns an integer</p>
+<h3 id="解答-1">解答</h3><figure class="highlight javascript"><figcaption><span>[]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">squareDigits</span>(<span class="params">num</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Number</span>((<span class="string">''</span> + num).split(<span class="string">''</span>).map(<span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123; <span class="keyword">return</span> val * val;&#125;).join(<span class="string">''</span>));</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Description:</p>
+<p>Given a non-negative integer, return an array / a list of the individual digits in order.</p>
+<p>Examples:</p>
+<p>123 =&gt; [1,2,3]</p>
+<p>1 =&gt; [1]</p>
+<p>8675309 =&gt; [8,6,7,5,3,0,9]</p>
+<h3 id="解答-2">解答</h3><figure class="highlight javascript"><figcaption><span>[]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">digitize</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">String</span>(n).split(<span class="string">''</span>).map(<span class="built_in">Number</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
