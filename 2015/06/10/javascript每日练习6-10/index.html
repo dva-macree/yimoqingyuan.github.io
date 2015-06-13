@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>javascript每日练习6-10 | Boney_Chiang的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Grouped by commashttp://www.codewars.com/kata/grouped-by-commas/javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript每日练习6-10">
+<meta property="og:url" content="http://yoursite.com/2015/06/10/javascript每日练习6-10/index.html">
+<meta property="og:site_name" content="Boney_Chiang的博客">
+<meta property="og:description" content="Grouped by commashttp://www.codewars.com/kata/grouped-by-commas/javascript">
+<meta property="og:updated_time" content="2015-06-10T02:29:46.095Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript每日练习6-10">
+<meta name="twitter:description" content="Grouped by commashttp://www.codewars.com/kata/grouped-by-commas/javascript">
+  
+    <link rel="alternative" href="/atom.xml" title="Boney_Chiang的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?a89f17fe60bb712e713ff1885c129ce5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="/img/jiangzy.png" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Boney Chiang</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="douban" target="_blank" href="/#" title="douban">douban</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Singleton/" style="font-size: 10px;">Singleton</a> <a href="/tags/codewar/" style="font-size: 10px;">codewar</a> <a href="/tags/codewars/" style="font-size: 20px;">codewars</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/maven/" style="font-size: 15px;">maven</a> <a href="/tags/spring/" style="font-size: 15px;">spring</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Boney Chiang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/jiangzy.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Boney Chiang</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="douban" target="_blank" href="/#" title="douban">douban</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-javascript每日练习6-10" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/10/javascript每日练习6-10/" class="article-date">
+  	<time datetime="2015-06-10T02:06:30.000Z" itemprop="datePublished">2015-06-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript每日练习6-10
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/codewars/">codewars</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Grouped_by_commas">Grouped by commas</h1><p><a href="http://www.codewars.com/kata/grouped-by-commas/javascript" target="_blank" rel="external">http://www.codewars.com/kata/grouped-by-commas/javascript</a><br><a id="more"></a></p>
+<h3 id="Description">Description</h3><p>Finish the solution so that it takes an input ‘n’ (integer) and returns a string that is the decimal representation of the number grouped by commas after every 3 digits.</p>
+<p>Assume: 0 &lt;= n &lt; 1000000000</p>
+<pre><code>   <span class="number">1</span>  -&gt;           <span class="string">"1"</span>
+  <span class="number">10</span>  -&gt;          <span class="string">"10"</span>
+ <span class="number">100</span>  -&gt;         <span class="string">"100"</span>
+<span class="number">1000</span>  -&gt;       <span class="string">"1,000"</span>
+</code></pre><p>   10000  -&gt;      “10,000”<br>  100000  -&gt;     “100,000”<br> 1000000  -&gt;   “1,000,000”<br>35235235  -&gt;  “35,235,235”</p>
+<h3 id="解答">解答</h3><figure class="highlight javascript"><figcaption><span>[]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">groupByCommas</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> n.toString().replace(<span class="regexp">/\B(?=(\d&#123;3&#125;)+(?!\d))/g</span>, <span class="string">","</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">groupByCommas</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = n + <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">if</span>(result.length &lt;= <span class="number">3</span>)</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = result.length  -<span class="number">3</span> ; i &gt; <span class="number">0</span>; i-=<span class="number">3</span> )&#123;</span><br><span class="line">        <span class="keyword">var</span> temp1 = result.substring(<span class="number">0</span>,i);</span><br><span class="line">        <span class="keyword">var</span> temp2 = result.substring(i);</span><br><span class="line">        result = temp1 + <span class="string">","</span> + temp2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">groupByCommas</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  str = <span class="built_in">String</span>(n)</span><br><span class="line">  <span class="keyword">return</span> str.split(<span class="regexp">/(?=(?:\d&#123;3&#125;)+$)/</span>).join(<span class="string">","</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">groupByCommas</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (n + <span class="string">""</span>).replace(<span class="regexp">/(\d)(?=(\d&#123;3&#125;)+$)/g</span>, <span class="string">"$1,"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="解析">解析</h3><p>I gave up trying to solve it with regex, and I’m only loosely grasping this one, but I can break parts of it down.</p>
+<p>\B states that the match starts at something that isn’t a ‘word boundary’, I think this ignores the commas after they’re inserted. (and possibly the start of the string itself, since that will never need a comma)</p>
+<p>(?= […]) is a lookahead assertion, so we’re trying to test if where we’re currently sitting in the string is followed by these rules. We have to use this lookahead instead of matching the digits themselves, because we’re not trying to replace the actual digits, just find the right position in the string to do inserts.</p>
+<p>\d{3} is looking for 3 digits, and wrapping it with ( )+ wants to match that pattern one or more times.</p>
+<p>?! is a negative lookahead assertion, so with (?!\d) we don’t want one single occurance of a digit after our groups of 3. I think what this effectively does is snap the selection to the right hand side… working backwards in groups of 3. Seeing if we’re in a valid part of the string by testing whether we can count to the end in steps of 3. (I would have gravitated towards using $ here to achor the end, but I couldn’t solve it using regex, so just ignore me)</p>
+<p>And the /g is the global flag which I think repeats the whole operation multiple times while the condition is present.</p>
+<p>If you take off the /g flag and watch it run once:<br>1234567 becomes:<br>1,234567<br>And you can see the “counting in clusters of 3 digits from the right hand side” idea working.<br>And if you imagine it running again on:<br>1,234567<br>The position that begins 234567 doesn’t qualify, because it sits with a word-boundary , to the left, so that digit gets skipped until the next valid position, which starts at 567 (becuase of the 3 digit rule). At which point the replacement repeats (because /g) and then there are no more valid matches in the string.</p>
+<p>\b代表字与字中间那个看不见的东西，如</p>
+<p>here is a word<br>那么，这句中有好几个\b, 每个单词的前后都有一个\b.</p>
+<p>所以你用 \bhere\b 可以匹配上面这个here,但如果here 不是一个单词，而是一个单词的一部分，如 adheread, 这样的话，用here 可以匹配，用\bhere\b就不能区配了，因为ad后面没有\b. 所以 adhere 中的here 不会被匹配。 </p>
+<p>总结： \b 就是用在你匹配整个单词的时候。 如果不是整个单词就不匹配。 你想匹配 I 的话，你知道，很多单词里都有I的，但我只想匹配I，就是“我”，这个时候用 \bI\b</p>
+<p>\B就是反过来，代表非字间。 类似\d代表数字， \D代表非数字。</p>
+<p><a href="https://regex101.com/" target="_blank" rel="external">https://regex101.com/</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/06/13/javascript每日练习6-13/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          javascript每日练习6-13
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/06/08/javascript每日练习6-8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javascript每日练习6.8</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="javascript每日练习6-10" data-title="javascript每日练习6-10" data-url="http://yoursite.com/2015/06/10/javascript每日练习6-10/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"yimoqingyuan"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Boney Chiang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>
