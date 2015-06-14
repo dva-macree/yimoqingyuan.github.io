@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>javascript每日练习6-14 | Boney_Chiang的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Roman Numerals Encoderhttp://www.codewars.com/kata/51b62bf6a9c58071c600001b/discuss">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript每日练习6-14">
+<meta property="og:url" content="http://yoursite.com/2015/06/14/javascript每日练习6-14/index.html">
+<meta property="og:site_name" content="Boney_Chiang的博客">
+<meta property="og:description" content="Roman Numerals Encoderhttp://www.codewars.com/kata/51b62bf6a9c58071c600001b/discuss">
+<meta property="og:updated_time" content="2015-06-14T08:15:20.560Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript每日练习6-14">
+<meta name="twitter:description" content="Roman Numerals Encoderhttp://www.codewars.com/kata/51b62bf6a9c58071c600001b/discuss">
+  
+    <link rel="alternative" href="/atom.xml" title="Boney_Chiang的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?a89f17fe60bb712e713ff1885c129ce5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="/img/jiangzy.png" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Boney Chiang</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="douban" target="_blank" href="/#" title="douban">douban</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Singleton/" style="font-size: 10px;">Singleton</a> <a href="/tags/codewar/" style="font-size: 10px;">codewar</a> <a href="/tags/codewars/" style="font-size: 20px;">codewars</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/maven/" style="font-size: 15px;">maven</a> <a href="/tags/spring/" style="font-size: 15px;">spring</a> <a href="/tags/日志/" style="font-size: 10px;">日志</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Boney Chiang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/jiangzy.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Boney Chiang</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="douban" target="_blank" href="/#" title="douban">douban</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-javascript每日练习6-14" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/14/javascript每日练习6-14/" class="article-date">
+  	<time datetime="2015-06-14T07:51:53.000Z" itemprop="datePublished">2015-06-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript每日练习6-14
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/codewars/">codewars</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Roman_Numerals_Encoder">Roman Numerals Encoder</h1><p><a href="http://www.codewars.com/kata/51b62bf6a9c58071c600001b/discuss" target="_blank" rel="external">http://www.codewars.com/kata/51b62bf6a9c58071c600001b/discuss</a></p>
+<a id="more"></a>
+<h3 id="题目">题目</h3><p>Description:</p>
+<p>Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.</p>
+<p>Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.</p>
+<p>Example:</p>
+<p>solution(1000); // should return ‘M’<br>Help:</p>
+<p>Symbol    Value<br>I          1<br>V          5<br>X          10<br>L          50<br>C          100<br>D          500<br>M          1,000<br>Remember that there can’t be more than 3 identical symbols in a row.</p>
+<p>More about roman numerals - <a href="http://en.wikipedia.org/wiki/Roman_numerals" target="_blank" rel="external">http://en.wikipedia.org/wiki/Roman_numerals</a></p>
+<h3 id="我的解答">我的解答</h3><figure class="highlight javascript"><figcaption><span>[]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">number</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// convert the number to a roman numeral</span></span><br><span class="line">    <span class="keyword">var</span> result = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">var</span> mNum = <span class="built_in">Math</span>.floor(number / <span class="number">1000</span>);</span><br><span class="line">    result += generate(<span class="string">'M'</span>,mNum);</span><br><span class="line">    <span class="keyword">var</span> dNum = <span class="built_in">Math</span>.floor((number - <span class="number">1000</span> * mNum) / <span class="number">100</span>);</span><br><span class="line">    <span class="keyword">if</span>(dNum &lt;= <span class="number">3</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'C'</span>,dNum);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(dNum &lt;= <span class="number">5</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'C'</span>,<span class="number">5</span> - dNum);</span><br><span class="line">        result += generate(<span class="string">'D'</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(dNum &lt;= <span class="number">8</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'D'</span>,<span class="number">1</span>);</span><br><span class="line">        result += generate(<span class="string">'C'</span>,dNum - <span class="number">5</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(dNum &gt; <span class="number">8</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'C'</span>,<span class="number">10</span> - dNum);</span><br><span class="line">        result += generate(<span class="string">'M'</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> cNum = <span class="built_in">Math</span>.floor((number - <span class="number">1000</span> * mNum - <span class="number">100</span> * dNum) / <span class="number">10</span>);</span><br><span class="line">    <span class="keyword">if</span>(cNum &lt;= <span class="number">3</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'X'</span>,cNum);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(cNum &lt;= <span class="number">5</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'X'</span>,<span class="number">5</span> - cNum);</span><br><span class="line">        result += generate(<span class="string">'L'</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(cNum &lt;= <span class="number">8</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'L'</span>,<span class="number">1</span>);</span><br><span class="line">        result += generate(<span class="string">'C'</span>,cNum - <span class="number">5</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(cNum &gt; <span class="number">8</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'X'</span>,<span class="number">10</span> - cNum);</span><br><span class="line">        result += generate(<span class="string">'C'</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> iNum = <span class="built_in">Math</span>.floor((number - <span class="number">1000</span> * mNum - <span class="number">100</span> * dNum - <span class="number">100</span> * cNum));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(iNum &lt;= <span class="number">3</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'I'</span>,iNum);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(iNum &lt;= <span class="number">5</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'I'</span>,<span class="number">5</span> - iNum);</span><br><span class="line">        result += generate(<span class="string">'V'</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(iNum &lt;= <span class="number">8</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'V'</span>,<span class="number">1</span>);</span><br><span class="line">        result += generate(<span class="string">'I'</span>,iNum - <span class="number">5</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(iNum &gt; <span class="number">8</span>)&#123;</span><br><span class="line">        result += generate(<span class="string">'I'</span>,<span class="number">10</span> - iNum);</span><br><span class="line">        result += generate(<span class="string">'X'</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">generate</span>(<span class="params">item ,num</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span>  i= <span class="number">0</span>; i &lt; num; i++)</span><br><span class="line">        result += item;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="clever_solution">clever solution</h3><figure class="highlight javascript"><figcaption><span>[]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">number</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// convert the number to a roman numeral</span></span><br><span class="line"><span class="keyword">var</span>  roman = &#123;M:<span class="number">1000</span>,CM:<span class="number">900</span>, D:<span class="number">500</span>,CD:<span class="number">400</span>,C:<span class="number">100</span>,XC:<span class="number">90</span>,L:<span class="number">50</span>,XL:<span class="number">40</span>,X:<span class="number">10</span>,IX:<span class="number">9</span>,V:<span class="number">5</span>,IV:<span class="number">4</span>,I:<span class="number">1</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ans = <span class="string">''</span>;</span><br><span class="line"><span class="keyword">while</span>(number&gt;<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">for</span>(a <span class="keyword">in</span> roman)&#123; </span><br><span class="line">        <span class="keyword">if</span>(roman[a]&lt;=number)&#123; ans += a; number-=roman[a]; <span class="keyword">break</span>;&#125;</span><br><span class="line">            </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="clever_Solution">clever Solution</h3><figure class="highlight javascript"><figcaption><span>[]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solution</span>(<span class="params">number</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [</span><br><span class="line">    &#123; threshold: <span class="number">1000</span>, char: <span class="string">'M'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">900</span>,  char: <span class="string">'CM'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">500</span>,  char: <span class="string">'D'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">400</span>,  char: <span class="string">'CD'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">100</span>,  char: <span class="string">'C'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">90</span>,   char: <span class="string">'XC'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">50</span>,   char: <span class="string">'L'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">40</span>,   char: <span class="string">'XL'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">10</span>,   char: <span class="string">'X'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">9</span>,    char: <span class="string">'IX'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">5</span>,    char: <span class="string">'V'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">4</span>,    char: <span class="string">'IV'</span>&#125;,</span><br><span class="line">    &#123; threshold: <span class="number">1</span>,    char: <span class="string">'I'</span>&#125;</span><br><span class="line">  ].reduce(<span class="function"><span class="keyword">function</span>(<span class="params">prev, curr, idx, arr</span>)</span><br><span class="line">  </span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(number &gt;= curr.threshold)</span><br><span class="line">    &#123;</span><br><span class="line">      prev += curr.char;</span><br><span class="line">      number -= curr.threshold;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> prev;</span><br><span class="line">  &#125;, <span class="string">''</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/06/13/javascript每日练习6-13/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javascript每日练习6-13</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="javascript每日练习6-14" data-title="javascript每日练习6-14" data-url="http://yoursite.com/2015/06/14/javascript每日练习6-14/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"yimoqingyuan"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Boney Chiang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>
